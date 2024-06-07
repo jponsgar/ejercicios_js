@@ -1,0 +1,38 @@
+Tabla de verdad compuerta AND 
+Entrada A 	Entrada B  	Salida A ∧ B 
+0		0		0
+0		1		0
+1		0		0
+1		1		1
+
+Proporciona a su salida un 1 lógico únicamente cuando todas sus entradas están en 1. 
+
+
+Tabla de verdad compuerta NAND
+Entrada A 	Entrada B 	Salida A B
+0		0		1
+0		1		1
+1		0		1
+1		1		0
+
+Proporciona a su salida un 0 lógico únicamente cuando todas sus entradas están en 1. 
+
+
+ Tabla de verdad compuerta OR 
+Entrada A	Entrada B	Salida A ∨ B 
+0		0		0
+0		1		1
+1		0		1
+1		1		1
+
+Podemos definir la compuerta OR como aquella que proporciona a su salida un 1 lógico si al menos una de sus entradas está a 1. 
+
+
+Tabla de verdad compuerta XOR 
+Entrada A  	Entrada B 	Salida A ⊕ B
+0		0		0
+0		1		1
+1		0		1
+1		1		0
+
+Se puede definir esta compuerta como aquella que da por resultado uno, cuando los valores en las entradas son distintos.
