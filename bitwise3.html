@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Operaciones básicas</h2>
+    <pre>El primer valor es: </pre><p id="input1"></p>
+    <pre>El segundo valor es: </pre><p id="input2"></p>
+    <h3>Suma Bitwise</h3>
+    <p id="bitwises"></p>
+    <h3>Suma Aritmética</h3>
+    <p id="aritmetica"></p>
+    <script>
+    // Suma Bitwise
+    let a = parseInt(prompt("Teclea un primer numero entero"));
+    let b = parseInt(prompt("Teclea un segundo numero entero"));
+    document.getElementById("input1").innerText = a;
+    document.getElementById("input2").innerText = b;
+    function sumaBitwise(a, b) {
+     while (b != 0) {
+         let carry = a & b;
+         a = a ^ b;
+         b = carry << 1;
+     }
+     return a;
+    }
+    // Suma aritmética
+    let sumaAritmetica = a + b;
+    // Suma bitwise
+    let sumaBitwises = a ^ b;
+    document.getElementById("bitwises").innerHTML = sumaBitwise(a, b);
+    document.getElementById("aritmetica").innerHTML = sumaAritmetica;
+    // document.getElementById("bitwises").innerHTML = sumaBitwises;
+    </script>  
+</body>
+</html>

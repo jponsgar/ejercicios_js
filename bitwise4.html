@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Desplazamiento de bits</h2>
+    <p>Ver en consola</p>
+    <script>
+// Multiplicación por 2 de forma normal
+let numero = (parseFloat(prompt("Teclea número:")));
+function multiplicarPorDosNormal(numero) {
+    return numero * 2;
+}
+// Multiplicación por 2 con desplazamiento de bits
+function multiplicarPorDosBitwise(numero) {
+    return numero << 1;
+}
+// División por 2 de forma normal
+function dividirPorDosNormal(numero) {
+    return numero / 2;
+}
+// División por 2 con desplazamiento de bits
+function dividirPorDosBitwise(numero) {
+    return numero >> 1;
+}
+// Ejemplo de uso
+console.log("Multiplicación por 2 (Normal):", multiplicarPorDosNormal(numero));
+console.log("Multiplicación por 2 (Bitwise):", multiplicarPorDosBitwise(numero));
+console.log("División por 2 (Normal):", dividirPorDosNormal(numero));
+console.log("División por 2 (Bitwise):", dividirPorDosBitwise(numero));
+    </script>  
+</body>
+</html>

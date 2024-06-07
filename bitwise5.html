@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Comparativa de multiplicar y dividir por 2</h2>
+    <p>Ver en Consola</p>
+    <script>
+// Comparativa de multiplicar por 2
+// let numero = (parseFloat(prompt("Teclea número:")));
+// Número grande
+// let numeroGrande = 999999999; // prueba este primero
+let numeroGrande = 12345678901234567890; // --> prueba este después, ¿qué sucede?
+// Medir el tiempo para la multiplicación normal
+let inicioNormal = performance.now();
+let resultadoNormal = numeroGrande * 2;
+let finNormal = performance.now();
+let tiempoNormal = finNormal - inicioNormal;
+
+// Medir el tiempo para la multiplicación bitwise
+let inicioBitwise = performance.now();
+let resultadoBitwise = numeroGrande << 1;
+let finBitwise = performance.now();
+let tiempoBitwise = finBitwise - inicioBitwise;
+
+// Mostrar resultados
+console.log("Resultado Multiplicación Normal:", resultadoNormal);
+console.log("Tiempo Multiplicación Normal:", tiempoNormal, "milisegundos");
+console.log("Resultado Multiplicación Bitwise:", resultadoBitwise);
+console.log("Tiempo Multiplicación Bitwise:", tiempoBitwise, "milisegundos");
+
+// Comparativa de dividir por 2
+// Medir el tiempo para la división normal
+let inicioNormald = performance.now();
+let resultadoNormald = numeroGrande / 2;
+let finNormald = performance.now();
+let tiempoNormald = finNormald - inicioNormald;
+
+// Medir el tiempo para la división bitwise
+let inicioBitwised = performance.now();
+let resultadoBitwised = numeroGrande >> 1;
+let finBitwised = performance.now();
+let tiempoBitwised = finBitwised - inicioBitwised;
+
+// Mostrar resultados
+console.log("Resultado División Normal:", resultadoNormald);
+console.log("Tiempo División Normal:", tiempoNormald, "milisegundos");
+console.log("Resultado División Bitwise:", resultadoBitwised);
+console.log("Tiempo División Bitwise:", tiempoBitwised, "milisegundos");
+    </script>  
+</body>
+</html>
