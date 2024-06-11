@@ -352,7 +352,7 @@ function saludar(nombre) {
     console.log("Hola, " + nombre + "!");
 }
 // Llamamos a la función con el argumento "Mundo" y vemos en consola el saludo
-saludar("Mundo");
+saludar("Pepe");
 
 Ejercicio 2: Manipulación del DOM
 
@@ -372,8 +372,8 @@ Descripción: Escribe un script que tome un número como cadena (por ejemplo, "1
 
 // Función para convertir una cadena a un número entero
 function convertirCadena(cadena) {
-    let numeroEntero = parseInt(cadena);
-    console.log(numeroEntero);
+    let entero = parseInt(cadena);
+    console.log(entero);
 }
 convertirCadena("123");
 
@@ -400,7 +400,7 @@ Descripción: Añade un párrafo al HTML con el id "miParrafo" y el texto "Hola 
 Teoría
 Pregunta 1: ¿Cuál es la diferencia entre var, let, y const en JavaScript? Proporciona un ejemplo de cada uno.
 
-La función var permite re-declaración
+La función var permite re-declaración y re-asignación.
     var x = 10;
     var x = 20; 
     console.log(x); //20
@@ -435,8 +435,8 @@ document.getElementById('hijo').addEventListener('click', function(event) {
 
 Pregunta 3: ¿Cómo funcionan las promesas en JavaScript? Explica con un ejemplo sencillo de una promesa que se resuelve después de 2 segundos.
 
-Las promesas en JavaScript son objetos que indican el fin y el valor de una operación asincrónica.
-Definimos una función que hace una tarea asíncrona y finalmente resuelve la promesa, con una valor de lectura con retardo. Luego recibimos el resultado de la promesa.
+Las promesas en JavaScript son objetos que indican el fin y el valor de una operación asincrónica. Puede estar en uno de estos tres estados: (pending, fulfilled o rejected).
+Ejemplo de una tarea asíncrona que resuelve la promesa, con un valor de lectura con retardo. Luego recibimos el resultado de la promesa.
 
 const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -450,7 +450,7 @@ console.log(promise1);
 
 Pregunta 4: ¿Qué es la diferencia entre == y === en JavaScript? Proporciona un ejemplo donde == devuelva true y === devuelva false.
 
-En los operadores booleanos; == “valor igual”, === “valor igual y de tipo”.
+Operadores booleanos; == “valor igual”, === “valor igual y de tipo”:
 1 == '1'  // true		1 == 1  // true
 1 === '1' // false		1 === 1 // true
 
